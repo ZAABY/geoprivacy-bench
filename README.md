@@ -8,7 +8,7 @@ Your phone's location history is one of the most identifying datasets there is. 
 
 Run with 30 simulated users, 14 days each, GPS sample every 5 minutes (seed 42). "Found" means the attacker's estimate lands within 200 m of the true location. Full output: [docs/results.md](docs/results.md), raw numbers: [docs/results.json](docs/results.json).
 
-![privacy utility trade-off](docs/privacy_utility.png)
+![privacy utility trade-off](docs/privacy_utility.svg)
 
 Population: 30 users x 14 days, seed 42
 
@@ -69,7 +69,7 @@ The attack error numbers depend heavily on the simulation, see Limitations.
 ```bash
 pip install -r requirements.txt
 pytest -q
-python -m gpbench.bench --users 30 --days 14 --seed 42 --plot privacy_utility.png --json results.json
+python -m gpbench.bench --users 30 --days 14 --seed 42 --plot privacy_utility.svg --json results.json
 python -m gpbench.bench --uniqueness --users 30 --seed 42
 ```
 
