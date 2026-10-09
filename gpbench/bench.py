@@ -152,7 +152,7 @@ def main(argv=None):
     p.add_argument("--days", type=int, default=14)
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--json", help="write full results to this file")
-    p.add_argument("--plot", help="write privacy-utility scatter plot (png)")
+    p.add_argument("--plot", help="write privacy-utility scatter plot (png or svg)")
     p.add_argument("--uniqueness", action="store_true", help="print only the re-identification curve for raw traces")
     a = p.parse_args(argv)
     if a.uniqueness:
